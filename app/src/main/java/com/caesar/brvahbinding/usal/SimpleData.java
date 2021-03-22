@@ -1,5 +1,8 @@
 package com.caesar.brvahbinding.usal;
 
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.databinding.ObservableField;
 import androidx.databinding.ObservableInt;
 
@@ -37,6 +40,11 @@ public class SimpleData  {
 
     public void setResId(ObservableInt resId) {
         this.resId = resId;
+    }
+
+    public void itemClick(View view){
+        Toast.makeText(view.getContext(),"点击我了",Toast.LENGTH_SHORT).show();
+
     }
 
 }
